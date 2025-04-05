@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --text-color: #1f2937;
+    --background-color: #f3f4f6;
+    --card-background: #ffffff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+    font-weight: 600;
+}
+
+p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+header {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.instagram, .home {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.instagram:hover, .home:hover {
+    transform: scale(1.1);
+}
+
+.instagram {
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.box {
+    background-color: var(--card-background);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .instagram, .home {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .instagram {
+        left: 1rem;
+    }
+
+    .home {
+        right: 1rem;
+    }
+
+    .box {
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
